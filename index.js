@@ -6,8 +6,8 @@ var config = require("./config.json"),
 	isUtf8   = require('is-utf8'),
 	buffer   = require("buffer").Buffer;
 
-var commentContent         = fs.readFileSync(path.join(__dirname,"comment_default.txt"),{encoding:"utf8"});
-var commentContent_forUTF8 = fs.readFileSync(path.join(__dirname,"comment_default_utf8.txt"),{encoding:"utf8"});
+var commentContent         = fs.readFileSync(path.join(__dirname,"feng.txt"),{encoding:"utf8"});
+var commentContent_forUTF8 = fs.readFileSync(path.join(__dirname,"feng.txt"),{encoding:"utf8"});
 console.log("commet template is at :" + __dirname + "\r\njust rewrite it as you wish\r\n");
 
 var targetList = process.argv;
@@ -48,7 +48,7 @@ function mathcRuleForFile(filePath){
 			break;
 		}
 	}
-	
+
 	function dealFile(filePath) {
 
 		if(!fs.existsSync(filePath)){
